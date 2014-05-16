@@ -20,27 +20,29 @@ my $meta = {
                         configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
                         develop   => { recommends => { "Dist::Inkt" => 0.001 } },
                         runtime   => {
-                                       requires => { "Moose" => 1.15, "perl" => 5.008001, "Type::Tiny::Enum" => 0 },
+                                       requires => { "Moose" => 1.15, "perl" => 5.008001, "Type::Tiny::Enum" => "0.030" },
                                      },
-                        test      => { requires => { "Test::More" => 0.92 } },
+                        test      => {
+                                       requires => { "Test::More" => 0.92, "Types::Standard" => 0.008 },
+                                     },
                       },
   "provides"       => {
                         "Moose::Meta::Attribute::Custom::Trait::Enum" => {
                           file => "lib/Moose/Meta/Attribute/Custom/Trait/Enum.pm",
-                          version => 0.001,
+                          version => 0.002,
                         },
                         "Moose::Meta::Attribute::Custom::Trait::Enumeration" => {
                           file => "lib/Moose/Meta/Attribute/Custom/Trait/Enumeration.pm",
-                          version => 0.001,
+                          version => 0.002,
                         },
-                        "MooseX::Enumeration" => { file => "lib/MooseX/Enumeration.pm", version => 0.001 },
+                        "MooseX::Enumeration" => { file => "lib/MooseX/Enumeration.pm", version => 0.002 },
                         "MooseX::Enumeration::Meta::Attribute::Native::Trait::Enumeration" => {
                           file => "lib/MooseX/Enumeration/Meta/Attribute/Native/Trait/Enumeration.pm",
-                          version => 0.001,
+                          version => 0.002,
                         },
                         "MooseX::Enumeration::Meta::Method::Accessor::Native::Enumeration::is" => {
                           file => "lib/MooseX/Enumeration/Meta/Method/Accessor/Native/Enumeration/is.pm",
-                          version => 0.001,
+                          version => 0.002,
                         },
                       },
   "release_status" => "stable",
@@ -57,7 +59,7 @@ my $meta = {
                                         },
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/MooseX-Enumeration/project",
                       },
-  "version"        => 0.001,
+  "version"        => 0.002,
 };
 
 my %dynamic_config;

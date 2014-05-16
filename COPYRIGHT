@@ -18,6 +18,7 @@ License: GPL-1.0+ or Artistic-1.0
 Files: README
  lib/MooseX/Enumeration.pm
  t/01basic.t
+ t/02moosey.t
 Copyright: This software is copyright (c) 2014 by Toby Inkster.
 License: GPL-1.0+ or Artistic-1.0
 

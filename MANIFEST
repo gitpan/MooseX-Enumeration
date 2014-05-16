@@ -18,3 +18,4 @@ lib/MooseX/Enumeration.pm
 lib/MooseX/Enumeration/Meta/Attribute/Native/Trait/Enumeration.pm
 lib/MooseX/Enumeration/Meta/Method/Accessor/Native/Enumeration/is.pm
 t/01basic.t
+t/02moosey.t
