@@ -4,7 +4,6 @@ author:
   - 'Toby Inkster (TOBYINK) <tobyink@cpan.org>'
 build_requires:
   Test::More: 0.92
-  Types::Standard: 0.008
 configure_requires:
   ExtUtils::MakeMaker: 6.17
 dynamic_config: 0
@@ -26,22 +25,24 @@ optional_features: {}
 provides:
   Moose::Meta::Attribute::Custom::Trait::Enum:
     file: lib/Moose/Meta/Attribute/Custom/Trait/Enum.pm
-    version: 0.002
+    version: 0.003
   Moose::Meta::Attribute::Custom::Trait::Enumeration:
     file: lib/Moose/Meta/Attribute/Custom/Trait/Enumeration.pm
-    version: 0.002
+    version: 0.003
   MooseX::Enumeration:
     file: lib/MooseX/Enumeration.pm
-    version: 0.002
+    version: 0.003
   MooseX::Enumeration::Meta::Attribute::Native::Trait::Enumeration:
     file: lib/MooseX/Enumeration/Meta/Attribute/Native/Trait/Enumeration.pm
-    version: 0.002
+    version: 0.003
   MooseX::Enumeration::Meta::Method::Accessor::Native::Enumeration::is:
     file: lib/MooseX/Enumeration/Meta/Method/Accessor/Native/Enumeration/is.pm
-    version: 0.002
-requires:
-  Moose: 1.15
+    version: 0.003
+recommends:
   Type::Tiny::Enum: 0.030
+requires:
+  Module::Runtime: 0
+  Moose: 1.15
   perl: 5.008001
 resources:
   X_identifier: http://purl.org/NET/cpan-uri/dist/MooseX-Enumeration/project
@@ -49,4 +50,4 @@ resources:
   homepage: https://metacpan.org/release/MooseX-Enumeration
   license: http://dev.perl.org/licenses/
   repository: git://github.com/tobyink/p5-moosex-enumeration.git
-version: 0.002
+version: 0.003

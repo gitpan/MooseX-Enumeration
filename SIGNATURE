@@ -17,27 +17,27 @@ Hash: SHA1
 SHA1 294505f858f11dd062e9916e3f50d88210a9ef54 CONTRIBUTING
 SHA1 494c82e9c904c305d3529620a92049a053aa3473 COPYRIGHT
 SHA1 6bd7b17d81be63d08d4efa6cb80106e72887842c CREDITS
-SHA1 68912f256b36af6d6e86ee09ba64694d2bda8d14 Changes
+SHA1 8189e9561241e8fb80b04e2ca609d1f9a3d8e7d5 Changes
 SHA1 81ad0f4f9631fad11a4feb2bdc18ae4d42d95b5e INSTALL
 SHA1 47870123f373f5185d6893cb98bf06a8a05510aa LICENSE
 SHA1 ed6558c64fcfdfd2e7d6a2edb7562830c47d959d MANIFEST
-SHA1 ea26a66f4dc3758616094b61b3508de489a8bb14 META.json
-SHA1 e8cc538cd36adaca0dc6abb453c644729da0758f META.yml
-SHA1 78dd76fff55227d4dd2618f3e8c9b84c08bdfefb Makefile.PL
-SHA1 d14cabac3967c47ab178e178b0a670357cba3667 README
+SHA1 9e37456fcfcb04ba8d036a5ebfdcac75731df1c6 META.json
+SHA1 fed08d2ffea5292df843629cfe1c3d86216b1bfe META.yml
+SHA1 4eaf50b3ec3da5b21d8f28a0029980304f9b474c Makefile.PL
+SHA1 fe26dfc63ab0ac764024020897f8515a04a06f5a README
 SHA1 20f1b5567ca8bc55ef9e464e36554d41182baf1c dist.ini
-SHA1 1e677665b055053e81a43ba5a1d88ff3b08d96fa doap.ttl
-SHA1 e082acccb3739733040faaafaf5f4084dbccbe51 lib/Moose/Meta/Attribute/Custom/Trait/Enum.pm
-SHA1 709a1db7ca6a73db8a058591202116da38d2490e lib/Moose/Meta/Attribute/Custom/Trait/Enumeration.pm
-SHA1 6ea4e5e34d10465ed7d3b36129958766a255b269 lib/MooseX/Enumeration.pm
-SHA1 f44d5f67c79770ad39c5d2e80083ccfd06324115 lib/MooseX/Enumeration/Meta/Attribute/Native/Trait/Enumeration.pm
-SHA1 1998ea717b87e686314f8ca982fb44d3a036291a lib/MooseX/Enumeration/Meta/Method/Accessor/Native/Enumeration/is.pm
+SHA1 8159e130b03bc131c626c78358b2a6d66c0fc8d6 doap.ttl
+SHA1 bf22c0560c91beea0b60ec1f307a5bdb2efaacf5 lib/Moose/Meta/Attribute/Custom/Trait/Enum.pm
+SHA1 448d9ee5272e33c82ce3cc8ed021fcd72446a7e1 lib/Moose/Meta/Attribute/Custom/Trait/Enumeration.pm
+SHA1 8f21d9de280c03d6fa259c9872c6fb5492835e01 lib/MooseX/Enumeration.pm
+SHA1 01178458016ca9d1ceffaa8b9c834dc99ae1f517 lib/MooseX/Enumeration/Meta/Attribute/Native/Trait/Enumeration.pm
+SHA1 7eb47a72abc0e4897bce538a48be7df250592698 lib/MooseX/Enumeration/Meta/Method/Accessor/Native/Enumeration/is.pm
 SHA1 6c7427f209d90b0bef56c08cd381d02832f9cf4d t/01basic.t
 SHA1 481bfd4f875e08e63607a649cbd02fbf7da6cf4b t/02moosey.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iEYEARECAAYFAlN2lFAACgkQzr+BKGoqfTmKEQCgpwYvbpKJgNfZiKniCEHvCG4q
-KysAmwaf8uwkiidOEzcATTh7Qytf/oWY
-=RDFv
+iEYEARECAAYFAlN4d5QACgkQzr+BKGoqfTl8MgCcD/g0fF4+W2UNCRJnet0Y4nv/
+O4MAn342sVgAV0kRGwb/GQyPfw8aRt+Y
+=slsu
 -----END PGP SIGNATURE-----

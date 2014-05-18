@@ -116,6 +116,12 @@ DESCRIPTION
 
     This will create a delegated method for each value in the enumeration.
 
+PERFORMANCE
+    As of version 0.003, `$obj->is_pass` actually benchmarks *faster* than
+    `$obj->status eq "pass"`. The latter comparison can be accelerated using
+    MooseX::XSAccessor but this module can not (yet) provide an XS version for
+    `is_pass`. :-(
+
 BUGS
     Please report any bugs to
     <http://rt.cpan.org/Dist/Display.html?Queue=MooseX-Enumeration>.

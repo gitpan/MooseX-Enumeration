@@ -4,7 +4,7 @@ use warnings;
 
 package MooseX::Enumeration::Meta::Attribute::Native::Trait::Enumeration;
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.002';
+our $VERSION   = '0.003';
 
 use Moose::Role;
 with 'Moose::Meta::Attribute::Native::Trait';
@@ -20,9 +20,10 @@ before _process_isa_option => sub
 	{
 		confess "Cannot supply both the 'isa' and 'enum' options"
 			if $options->{isa};
-		
-		require Type::Tiny::Enum;
-		$options->{isa} = 'Type::Tiny::Enum'->new(values => $options->{enum});
+		require MooseX::Enumeration;
+		$options->{isa} = 'MooseX::Enumeration'
+			-> _enum_type_implementation
+			-> new( values => $options->{enum} );
 	}
 };
 

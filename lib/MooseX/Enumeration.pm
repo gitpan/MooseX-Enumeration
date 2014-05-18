@@ -5,7 +5,20 @@ use warnings;
 package MooseX::Enumeration;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.002';
+our $VERSION   = '0.003';
+
+{
+	my $impl;
+	sub _enum_type_implementation
+	{
+		$impl ||= eval { require Type::Tiny::Enum }
+			? 'Type::Tiny::Enum'
+			: do {
+				require Moose::Meta::TypeConstraint::Enum;
+				'Moose::Meta::TypeConstraint::Enum';
+			};
+	}
+}
 
 1;
 
@@ -140,6 +153,13 @@ We can still go one better...
    );
 
 This will create a delegated method for each value in the enumeration.
+
+=head1 PERFORMANCE
+
+As of version 0.003, C<< $obj->is_pass >> actually benchmarks I<faster>
+than C<< $obj->status eq "pass" >>. The latter comparison can be
+accelerated using L<MooseX::XSAccessor> but this module can not (yet)
+provide an XS version for C<is_pass>. :-(
 
 =head1 BUGS
 
