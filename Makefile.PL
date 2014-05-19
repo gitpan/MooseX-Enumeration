@@ -28,20 +28,20 @@ my $meta = {
   "provides"       => {
                         "Moose::Meta::Attribute::Custom::Trait::Enum" => {
                           file => "lib/Moose/Meta/Attribute/Custom/Trait/Enum.pm",
-                          version => 0.003,
+                          version => 0.004,
                         },
                         "Moose::Meta::Attribute::Custom::Trait::Enumeration" => {
                           file => "lib/Moose/Meta/Attribute/Custom/Trait/Enumeration.pm",
-                          version => 0.003,
+                          version => 0.004,
                         },
-                        "MooseX::Enumeration" => { file => "lib/MooseX/Enumeration.pm", version => 0.003 },
+                        "MooseX::Enumeration" => { file => "lib/MooseX/Enumeration.pm", version => 0.004 },
                         "MooseX::Enumeration::Meta::Attribute::Native::Trait::Enumeration" => {
                           file => "lib/MooseX/Enumeration/Meta/Attribute/Native/Trait/Enumeration.pm",
-                          version => 0.003,
+                          version => 0.004,
                         },
                         "MooseX::Enumeration::Meta::Method::Accessor::Native::Enumeration::is" => {
                           file => "lib/MooseX/Enumeration/Meta/Method/Accessor/Native/Enumeration/is.pm",
-                          version => 0.003,
+                          version => 0.004,
                         },
                       },
   "release_status" => "stable",
@@ -58,7 +58,7 @@ my $meta = {
                                         },
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/MooseX-Enumeration/project",
                       },
-  "version"        => 0.003,
+  "version"        => 0.004,
 };
 
 my %dynamic_config;

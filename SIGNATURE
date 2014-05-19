@@ -15,29 +15,29 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 294505f858f11dd062e9916e3f50d88210a9ef54 CONTRIBUTING
-SHA1 494c82e9c904c305d3529620a92049a053aa3473 COPYRIGHT
+SHA1 62d0e28e253dd6e1f03dda649ca63bd872971dc5 COPYRIGHT
 SHA1 6bd7b17d81be63d08d4efa6cb80106e72887842c CREDITS
-SHA1 8189e9561241e8fb80b04e2ca609d1f9a3d8e7d5 Changes
+SHA1 f39a07bc00a0d7f8eda1e3724c23fe271fdd42b3 Changes
 SHA1 81ad0f4f9631fad11a4feb2bdc18ae4d42d95b5e INSTALL
 SHA1 47870123f373f5185d6893cb98bf06a8a05510aa LICENSE
 SHA1 ed6558c64fcfdfd2e7d6a2edb7562830c47d959d MANIFEST
-SHA1 9e37456fcfcb04ba8d036a5ebfdcac75731df1c6 META.json
-SHA1 fed08d2ffea5292df843629cfe1c3d86216b1bfe META.yml
-SHA1 4eaf50b3ec3da5b21d8f28a0029980304f9b474c Makefile.PL
+SHA1 1241fba9c21f0464b3e2014c5f652732d60b7d50 META.json
+SHA1 e1d78f0327285c2d0e1ebf7aac5ff63dc9ec761f META.yml
+SHA1 8afdf1f924f71519c2c9d29f61315284e3c458c5 Makefile.PL
 SHA1 fe26dfc63ab0ac764024020897f8515a04a06f5a README
 SHA1 20f1b5567ca8bc55ef9e464e36554d41182baf1c dist.ini
-SHA1 8159e130b03bc131c626c78358b2a6d66c0fc8d6 doap.ttl
-SHA1 bf22c0560c91beea0b60ec1f307a5bdb2efaacf5 lib/Moose/Meta/Attribute/Custom/Trait/Enum.pm
-SHA1 448d9ee5272e33c82ce3cc8ed021fcd72446a7e1 lib/Moose/Meta/Attribute/Custom/Trait/Enumeration.pm
-SHA1 8f21d9de280c03d6fa259c9872c6fb5492835e01 lib/MooseX/Enumeration.pm
-SHA1 01178458016ca9d1ceffaa8b9c834dc99ae1f517 lib/MooseX/Enumeration/Meta/Attribute/Native/Trait/Enumeration.pm
-SHA1 7eb47a72abc0e4897bce538a48be7df250592698 lib/MooseX/Enumeration/Meta/Method/Accessor/Native/Enumeration/is.pm
+SHA1 559355bbd901e65a9fb7f438c277a18983818656 doap.ttl
+SHA1 0f4af71ef15cc6382595685945f4409f85e2a1f0 lib/Moose/Meta/Attribute/Custom/Trait/Enum.pm
+SHA1 55bf8ce6ae76fdc98e8c0a73172c4977e0c5cbcc lib/Moose/Meta/Attribute/Custom/Trait/Enumeration.pm
+SHA1 aadc4f2a2a6caf9d99230d673597ea6dfc735c9c lib/MooseX/Enumeration.pm
+SHA1 db1773912a5c2e732b320ae8bc55b95fad72a837 lib/MooseX/Enumeration/Meta/Attribute/Native/Trait/Enumeration.pm
+SHA1 0635da5d23b4b44943bc0ecbbeec2ff0e7b54858 lib/MooseX/Enumeration/Meta/Method/Accessor/Native/Enumeration/is.pm
 SHA1 6c7427f209d90b0bef56c08cd381d02832f9cf4d t/01basic.t
 SHA1 481bfd4f875e08e63607a649cbd02fbf7da6cf4b t/02moosey.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iEYEARECAAYFAlN4d5QACgkQzr+BKGoqfTl8MgCcD/g0fF4+W2UNCRJnet0Y4nv/
-O4MAn342sVgAV0kRGwb/GQyPfw8aRt+Y
-=slsu
+iEYEARECAAYFAlN5ycUACgkQzr+BKGoqfTmvRgCfSwvmOmZglZog+5QZdH6HHpr4
+3tcAoKjpHpseft+4TvUW2gDbCBS49JVr
+=t4fQ
 -----END PGP SIGNATURE-----
