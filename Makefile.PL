@@ -7,7 +7,7 @@ my $meta = {
   "abstract"       => "a native attribute trait for enums",
   "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
   "dynamic_config" => 0,
-  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.015, CPAN::Meta::Converter version 2.120921",
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.016, CPAN::Meta::Converter version 2.140640",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -20,28 +20,39 @@ my $meta = {
                         configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
                         develop   => { recommends => { "Dist::Inkt" => 0.001 } },
                         runtime   => {
-                                       recommends => { "Type::Tiny::Enum" => "0.030" },
-                                       requires   => { "Module::Runtime" => 0, "Moose" => 1.15, "perl" => 5.008001 },
+                                       recommends => { "match::simple::XS" => 0, "Type::Tiny::Enum" => "0.030" },
+                                       requires   => {
+                                                       "match::simple" => 0,
+                                                       "Module::Runtime" => 0,
+                                                       "Moose" => 1.15,
+                                                       "perl" => 5.008001,
+                                                     },
                                      },
-                        test      => { requires => { "Test::More" => 0.92 } },
+                        test      => {
+                                       requires => { "Test::Fatal" => 0, "Test::More" => 0.92, "Test::Requires" => 0.006 },
+                                     },
                       },
   "provides"       => {
                         "Moose::Meta::Attribute::Custom::Trait::Enum" => {
                           file => "lib/Moose/Meta/Attribute/Custom/Trait/Enum.pm",
-                          version => 0.004,
+                          version => 0.005,
                         },
                         "Moose::Meta::Attribute::Custom::Trait::Enumeration" => {
                           file => "lib/Moose/Meta/Attribute/Custom/Trait/Enumeration.pm",
-                          version => 0.004,
+                          version => 0.005,
                         },
-                        "MooseX::Enumeration" => { file => "lib/MooseX/Enumeration.pm", version => 0.004 },
+                        "MooseX::Enumeration" => { file => "lib/MooseX/Enumeration.pm", version => 0.005 },
                         "MooseX::Enumeration::Meta::Attribute::Native::Trait::Enumeration" => {
                           file => "lib/MooseX/Enumeration/Meta/Attribute/Native/Trait/Enumeration.pm",
-                          version => 0.004,
+                          version => 0.005,
+                        },
+                        "MooseX::Enumeration::Meta::Method::Accessor::Native::Enumeration::assign" => {
+                          file => "lib/MooseX/Enumeration/Meta/Method/Accessor/Native/Enumeration/assign.pm",
+                          version => 0.005,
                         },
                         "MooseX::Enumeration::Meta::Method::Accessor::Native::Enumeration::is" => {
                           file => "lib/MooseX/Enumeration/Meta/Method/Accessor/Native/Enumeration/is.pm",
-                          version => 0.004,
+                          version => 0.005,
                         },
                       },
   "release_status" => "stable",
@@ -58,7 +69,7 @@ my $meta = {
                                         },
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/MooseX-Enumeration/project",
                       },
-  "version"        => 0.004,
+  "version"        => 0.005,
 };
 
 my %dynamic_config;

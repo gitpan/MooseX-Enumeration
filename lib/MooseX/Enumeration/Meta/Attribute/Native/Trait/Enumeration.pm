@@ -4,7 +4,7 @@ use warnings;
 
 package MooseX::Enumeration::Meta::Attribute::Native::Trait::Enumeration;
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.004';
+our $VERSION   = '0.005';
 
 use Moose::Role;
 with 'Moose::Meta::Attribute::Native::Trait';
@@ -73,6 +73,8 @@ around _canonicalize_handles => sub
 	my %handles = $self->$next(@_);
 	for my $h (values %handles)
 	{
+		next unless $h->[0] =~ /^(is|assign)_(\w+)$/;
+		
 		my @s = split /_/, shift(@$h), 2;
 		unshift @$h, @s;
 	}
